@@ -2,15 +2,15 @@
 using Valor;
 using Layout;
 
-Formatacao.Cor("\nC A L C U L A D O R A ", ConsoleColor.Blue);
-Console.WriteLine("\n1-adição");
-Console.WriteLine("2-Subtração");
-Console.WriteLine("3-Multiplicação");
-Console.WriteLine("4-Divisão");
-Console.WriteLine("Qual operação você deseja?  ");
+Formatacao.Cor("\nCALCULADORA METODO ", ConsoleColor.Yellow);
+Formatacao.Cor("\n1-adição", ConsoleColor.Cyan);
+Formatacao.Cor("2-Subtração", ConsoleColor.Cyan);
+Formatacao.Cor("3-Multiplicação", ConsoleColor.Cyan);
+Formatacao.Cor("4-Divisão", ConsoleColor.Cyan);
+Formatacao.Cor("Qual operação você deseja?", ConsoleColor.Cyan);
 if (!int.TryParse(Console.ReadLine(), out int resposta))
 {
-Formatacao.Cor("Insira uma resposta válida.", ConsoleColor.Red);
+Formatacao.Cor("Insira uma resposta válida.", ConsoleColor.Yellow);
 }
 switch (resposta)
 {
@@ -43,7 +43,7 @@ switch (resposta)
     break;
 
   default:
-    Formatacao.Cor("insira a opção correta!!!!", ConsoleColor.Red);
+    Formatacao.Cor("insira a opção correta!!!!", ConsoleColor.Yellow);
 
     break;
 }
